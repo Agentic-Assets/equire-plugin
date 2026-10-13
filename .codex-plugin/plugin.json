@@ -1,0 +1,43 @@
+{
+  "name": "equire",
+  "version": "0.2.0",
+  "description": "Governed commercial real estate deal intelligence from EQUIRE: cited deal briefings, portfolio triage, read-only underwriting what-ifs, listing screening, market research, and confirmed diligence and note updates, all within your EQUIRE permissions.",
+  "author": {
+    "name": "Agentic Assets"
+  },
+  "homepage": "https://www.equire.ai",
+  "repository": "https://github.com/Agentic-Assets/equire-plugin",
+  "license": "MIT",
+  "keywords": [
+    "commercial-real-estate",
+    "cre",
+    "underwriting",
+    "due-diligence",
+    "investment-committee",
+    "deal-intelligence"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "EQUIRE",
+    "shortDescription": "Governed CRE deal intelligence",
+    "longDescription": "EQUIRE is a governed commercial real estate deal workspace for acquisitions and investment teams. Connect your EQUIRE account to brief a deal with cited source excerpts, triage a portfolio by open risk, compare deals side by side, screen market listings, read a deal's market research, and run read-only underwriting what-ifs through a deal's saved valuation model. Depending on the write level you choose at sign-in, the assistant can stage valuation and review proposals for a person to approve in EQUIRE and, with Routine Workflow Updates where EQUIRE offers it, add deal notes, create or update diligence items, queue a listing for screening, attach report links to a deal, or start market research from a plan you approve. The skills have the assistant state each change and wait for your confirmation first, and ask it to give each figure's release basis and any permission limits. Investment committee decisions, data release and deal conversion stay in EQUIRE.",
+    "developerName": "Agentic Assets",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://www.equire.ai",
+    "supportURL": "https://www.equire.ai/contact",
+    "privacyPolicyURL": "https://www.equire.ai/privacy",
+    "termsOfServiceURL": "https://www.equire.ai/terms",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "defaultPrompt": [
+      "Which deals in my EQUIRE portfolio need attention this week, and what is blocking each one?",
+      "Brief me on my latest EQUIRE deal: price and cap rate with release basis, top risks, and cited rent roll excerpts.",
+      "On my latest EQUIRE deal with a saved model, what happens to levered IRR if the exit cap rises 50 bps? Save nothing."
+    ]
+  }
+}

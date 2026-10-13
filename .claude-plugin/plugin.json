@@ -1,0 +1,25 @@
+{
+  "name": "equire",
+  "displayName": "EQUIRE",
+  "version": "0.2.0",
+  "description": "Governed commercial real estate deal intelligence from EQUIRE: cited deal briefings, portfolio triage, read-only underwriting what-ifs, listing screening, market research, and confirmed diligence and note updates, all within your EQUIRE permissions.",
+  "author": {
+    "name": "Agentic Assets",
+    "url": "https://www.equire.ai"
+  },
+  "homepage": "https://www.equire.ai",
+  "repository": "https://github.com/Agentic-Assets/equire-plugin",
+  "license": "MIT",
+  "privacyPolicyUrl": "https://www.equire.ai/privacy",
+  "termsOfServiceUrl": "https://www.equire.ai/terms",
+  "documentationUrl": "https://www.equire.ai/developers",
+  "supportUrl": "https://www.equire.ai/contact",
+  "keywords": [
+    "commercial-real-estate",
+    "cre",
+    "underwriting",
+    "due-diligence",
+    "investment-committee",
+    "deal-intelligence"
+  ]
+}
