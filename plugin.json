@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "equire",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Governed commercial real estate deal intelligence from EQUIRE: cited deal briefings, portfolio triage, read-only underwriting what-ifs, listing screening, market research, and confirmed diligence and note updates, all within your EQUIRE permissions.",
   "author": {
     "name": "Agentic Assets"
@@ -93,7 +93,7 @@
         }
       },
       "publication": {
-        "release_notes": "Version 0.2.1 links the plugin documentation to the EQUIRE connect guide. The plugin replaces the separate Claude and OpenAI packages with one EQUIRE plugin and seven skills: onboarding, deal briefing, portfolio triage, underwriting what-if, listing screening, market research and investment workflow. Every skill shares the same ground rules and asks for your confirmation before any write or staged proposal. Account permissions and host support determine available behavior.",
+        "release_notes": "Version 0.2.2 makes attaching a report link and index it without reading its figures, which come from the next research run or Continue fact review, and reports skipped sources with a reason when retrying named reports. The plugin replaces the separate Claude and OpenAI packages with one EQUIRE plugin and seven skills: onboarding, deal briefing, portfolio triage, underwriting what-if, listing screening, market research and investment workflow. Every skill shares the same ground rules and asks for your confirmation before any write or staged proposal. Account permissions and host support determine available behavior.",
         "countries": []
       }
     }

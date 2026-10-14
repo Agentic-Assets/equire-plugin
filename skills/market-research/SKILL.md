@@ -34,9 +34,11 @@ Research runs search the web and read reports on the organization's behalf, so a
 
 ## Attach a report the user supplies
 
-When the user gives report URLs to link to deals, confirm with the user first: state each URL, each deal it will be attached to, and that EQUIRE fetches each page and the attachment uses the organization's metered research allowance. After the user confirms, call `attach_research_sources` with the deal IDs and URLs instead of starting a new run. The batch is not atomic: report the result for every deal and URL pair, and if a response is uncertain, retry only the failed or unreported pairs.
+When the user gives report URLs to link to deals, confirm with the user first: state each URL, each deal it will be attached to, and that attaching links and indexes each source but does not read its figures, and that it uses the organization's metered research allowance. After the user confirms, call `attach_research_sources` with the deal IDs and URLs. The batch is not atomic: report the result for every deal and URL pair, and if a response is uncertain, retry only the failed or unreported pairs.
 
-`recover_market_report_sources` exists only for an explicit operator request to retry named report sources in a deal's current research scope. Use it only when the user names those sources: confirm with the user first, stating which sources will be retried and that the retry uses the organization's metered research allowance, and call it only after the user confirms.
+Attaching a report does not replace a research run. A source that comes back marked linked only is the expected result: it is linked and indexed on the deal, and its figures are read by the next research run or by Continue fact review on the Sources tab in EQUIRE. Do not re-attach it, and do not describe it as added market evidence yet. Reading web pages may be turned off on a deployment, in which case a web page is refused with that reason; links to PDF reports are supported, though a PDF can still be unreachable.
+
+`recover_market_report_sources` exists only for an explicit operator request to retry named report sources in a deal's current research scope. Use it only when the user names those sources: confirm with the user first, stating which sources will be retried and that the retry uses the organization's metered research allowance, and call it only after the user confirms. If some named sources cannot be retried, the result lists them as skipped sources with a reason, such as already read or out of attempts, and retries the rest. If none can be retried, no run starts and the refusal says the sources are not in the deal's current scope or cannot be recovered; relay that reason to the user instead of trying again.
 
 ## Report the findings
 
