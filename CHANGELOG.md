@@ -2,6 +2,10 @@
 
 All notable changes to this plugin are documented here.
 
+## 0.2.1 - 2026-10-13
+
+- The plugin's documentation link now opens the EQUIRE connect guide.
+
 ## 0.2.0 - 2026-10-13
 
 - One EQUIRE plugin for Claude, ChatGPT, Codex, and Cursor, published from a single public repository with matching manifests for each host and one shared connection to `https://www.equire.ai/mcp`.
