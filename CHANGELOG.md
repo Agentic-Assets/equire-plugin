@@ -2,6 +2,12 @@
 
 All notable changes to this plugin are documented here.
 
+## 0.2.2 - 2026-10-14
+
+- Market research skill: attaching a report now links and indexes it without reading its figures, so a linked-only result is expected. Figures come from the next research run or Continue fact review. Web pages may be turned off on a deployment, while PDF links are supported (a PDF can still be unreachable). Attaching a report that is already linked to the deal reports it as already linked without fetching it again.
+- Retrying named report sources now reports skipped sources with a reason, and refuses before starting a run when none of the named sources can be retried.
+- A prospect's source count now reads as unknown rather than zero when it could not be read.
+
 ## 0.2.1 - 2026-10-13
 
 - The plugin's documentation link now opens the EQUIRE connect guide.
