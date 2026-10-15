@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "equire",
-  "version": "0.2.2",
-  "description": "Governed commercial real estate deal intelligence from EQUIRE: cited deal briefings, portfolio triage, read-only underwriting what-ifs, listing screening, market research, and confirmed diligence and note updates, all within your EQUIRE permissions.",
+  "version": "0.2.3",
+  "description": "Brief deals, triage a portfolio, and test underwriting what-ifs with figures tied to cited sources and release basis. Optional updates need your confirmation, and everything stays within your EQUIRE permissions. Requires an EQUIRE account.",
   "author": {
     "name": "Agentic Assets"
   },
@@ -21,8 +21,8 @@
     "com.openai": {
       "interface": {
         "displayName": "EQUIRE",
-        "shortDescription": "Governed CRE deal intelligence",
-        "longDescription": "EQUIRE is a governed commercial real estate deal workspace for acquisitions and investment teams. Connect your EQUIRE account to brief a deal with cited source excerpts, triage a portfolio by open risk, compare deals side by side, screen market listings, read a deal's market research, and run read-only underwriting what-ifs through a deal's saved valuation model. Depending on the write level you choose at sign-in, the assistant can stage valuation and review proposals for a person to approve in EQUIRE and, with Routine Workflow Updates where EQUIRE offers it, add deal notes, create or update diligence items, queue a listing for screening, attach report links to a deal, or start market research from a plan you approve. The skills have the assistant state each change and wait for your confirmation first, and ask it to give each figure's release basis and any permission limits. Investment committee decisions, data release and deal conversion stay in EQUIRE.",
+        "shortDescription": "Cited CRE deal intelligence",
+        "longDescription": "You are preparing a commercial real estate deal for investment committee. The offering memorandum, rent roll, T-12, and leases do not always agree, and a figure that does not tie to source tends to surface in the committee room instead of before it.\n\nEQUIRE is a governed deal workspace for acquisitions and investment teams. This app connects your assistant to the deals, documents, and valuation models your EQUIRE account can already open, within the organizations and permissions you grant at sign-in.\n\nWhat you can ask for:\n- A deal briefing with cited source excerpts and each figure's release basis, with preliminary items labeled as preliminary.\n- A portfolio view ranked by open risk, with deals compared side by side.\n- Document evidence, diligence items, and recent activity for one deal.\n- Read-only what-ifs through a deal's saved valuation model. Nothing is saved.\n- Screening of EQUIRE's market listing index, with offering memorandum facts and the broker contacts published with each listing.\n- A market research plan for a deal, run only after you approve it.\n\nYou decide how much your assistant can change. Writes are off unless you grant them. With Reads and Staged Changes, valuation and review changes are staged as proposals that a person on your team approves in EQUIRE. Where your organization offers Routine Workflow Updates, your assistant can also add deal notes, create or update diligence items, queue a listing for screening, attach report links to a deal, and start approved market research. The instructions ask your assistant to state each change and wait for your confirmation first.\n\nTo start: connect EQUIRE and sign in, choose your organizations, permissions, and write level on the consent screen, then ask for a briefing on a deal.\n\nThe result is a briefing your team can defend: figures traced to their sources, conflicts and permission limits stated, and open risks listed before the meeting.\n\nRequires an EQUIRE account. EQUIRE supports investment analysis and is not investment, legal, tax, or appraisal advice. Investment committee decisions, data release, deal creation, and sharing stay in EQUIRE. You can review or revoke the connection at any time in EQUIRE Settings.",
         "developerName": "Agentic Assets",
         "category": "Productivity",
         "capabilities": [
@@ -93,7 +93,7 @@
         }
       },
       "publication": {
-        "release_notes": "Version 0.2.2 makes attaching a report link and index it without reading its figures, which come from the next research run or Continue fact review, and reports skipped sources with a reason when retrying named reports. The plugin replaces the separate Claude and OpenAI packages with one EQUIRE plugin and seven skills: onboarding, deal briefing, portfolio triage, underwriting what-if, listing screening, market research and investment workflow. Every skill shares the same ground rules and asks for your confirmation before any write or staged proposal. Account permissions and host support determine available behavior.",
+        "release_notes": "Version 0.2.3 rewrites the listing copy around preparing a deal for investment committee, with no change to tools or skills. The plugin replaces the separate Claude and OpenAI packages with one EQUIRE plugin and seven skills: onboarding, deal briefing, portfolio triage, underwriting what-if, listing screening, market research and investment workflow. Every skill shares the same ground rules and asks for your confirmation before any write or staged proposal. Account permissions and host support determine available behavior.",
         "countries": []
       }
     }
