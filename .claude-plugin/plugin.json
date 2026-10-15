@@ -1,8 +1,8 @@
 {
   "name": "equire",
   "displayName": "EQUIRE",
-  "version": "0.2.2",
-  "description": "Governed commercial real estate deal intelligence from EQUIRE: cited deal briefings, portfolio triage, read-only underwriting what-ifs, listing screening, market research, and confirmed diligence and note updates, all within your EQUIRE permissions.",
+  "version": "0.2.3",
+  "description": "Brief deals, triage a portfolio, and test underwriting what-ifs with figures tied to cited sources and release basis. Optional updates need your confirmation, and everything stays within your EQUIRE permissions. Requires an EQUIRE account.",
   "author": {
     "name": "Agentic Assets",
     "url": "https://www.equire.ai"

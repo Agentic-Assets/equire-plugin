@@ -1,6 +1,6 @@
 # EQUIRE plugin
 
-[EQUIRE](https://www.equire.ai) is a governed commercial real estate deal-intelligence workspace for acquisitions and investment teams, built by [Agentic Assets](https://agenticassets.ai). This plugin connects a compatible AI assistant (Claude, ChatGPT, Codex, or Cursor) to your EQUIRE account and adds skills for deal briefings, portfolio triage, underwriting what-ifs, listing screening, market research, and diligence. The skills instruct the assistant to use only what EQUIRE returns from the deals, documents, valuation models, listings, and research you can access, and to state each figure's source and release basis.
+[EQUIRE](https://www.equire.ai) is a governed commercial real estate deal workspace for acquisitions and investment teams, built by [Agentic Assets](https://agenticassets.ai). When the offering memorandum, rent roll, and T-12 disagree, the team needs to know which figure to trust before investment committee, not during it. This plugin connects a compatible AI assistant (Claude, ChatGPT, Codex, or Cursor) to your EQUIRE account and adds skills for deal briefings, portfolio triage, underwriting what-ifs, listing screening, market research, and diligence. The skills instruct the assistant to use only what EQUIRE returns from the deals, documents, valuation models, listings, and research you can access, and to state each figure's source and release basis. It requires an EQUIRE account.
 
 ## Skills
 
