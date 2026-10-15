@@ -1,7 +1,7 @@
 {
   "name": "equire",
   "displayName": "EQUIRE",
-  "version": "0.2.3",
+  "version": "0.2.5",
   "description": "Brief deals, triage a portfolio, and test underwriting what-ifs with figures tied to cited sources and release basis. Optional updates need your confirmation, and everything stays within your EQUIRE permissions. Requires an EQUIRE account.",
   "author": {
     "name": "Agentic Assets"
