@@ -2,6 +2,14 @@
 
 All notable changes to this plugin are documented here.
 
+## 0.2.5 - 2026-10-15
+
+- Adds the ChatGPT demo recording link to the OpenAI review metadata; no tool or skill behavior change.
+
+## 0.2.4 - 2026-10-14
+
+- Listing category is now Finance, which matches the plugin's commercial real estate investment purpose; no tool or skill behavior change.
+
 ## 0.2.3 - 2026-10-14
 
 - Listing copy rewritten around the analyst's IC preparation; no tool or skill behavior change.
