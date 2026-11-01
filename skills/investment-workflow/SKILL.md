@@ -24,12 +24,19 @@ Move a deal forward in EQUIRE: find the evidence, record what the team needs to 
 2. Resolve the deal with `list_deals` or `search`, and keep its returned ID. For compact facts, economics, deadlines, and counts, call `get_deal_summary`; for an organization overview, call `get_organization_summary`.
 3. Where the host supports interactive apps, call `open_equire_workspace` (optionally with the organization ID or deal ID) to open the EQUIRE deal workspace for browsing deals, briefings, and source evidence. It changes no data. Where the host cannot show it, continue with the tools below.
 
+## Deal and file intake
+
+1. For a new deal, confirm with the user first: state the organization, deal name, property details, and exactly what will be created. After confirmation, call `create_deal` with `deals:write` and a new idempotency key. Reuse that key only for an uncertain retry of the same creation. Identity is assistant supplied and unverified; profile setup is still required. This does not convert a listing or approve any investment decision.
+2. Before `attach_deal_document` or `attach_deal_photo`, confirm with the user first: state the target deal, file, and what will be attached. These writes require `documents:write` and Routine Workflow Updates. Call only after confirmation and only with transferable file bytes. OpenAI's top-level `openai/fileParams` tool metadata declares the file argument; a filename or opaque host reference alone is not a persisted document. Claude file transfer remains unverified. When bytes are unavailable, direct the user to the deal's Documents page or photo gallery in EQUIRE; do not invent an upload URL or claim an attachment succeeded.
+3. Document intake deduplicates by content hash, without an atomic duplicate guarantee or caller idempotency key. Photo attachment has no idempotency key or replay guarantee; after an uncertain result, inspect the gallery in EQUIRE before repeating. Stored photos are sanitized to remove EXIF and GPS metadata.
+4. Read `get_document_intake_status` with `deals:read` for the returned document and deal. Report storage, processing, and retrieval separately. Attached or processing does not mean extracted, searchable, verified, or released. Keep any failure or limitation visible.
+
 ## Evidence
 
 1. Search one deal's processed documents with `search_deal_documents`, or every accessible deal's documents with `search_documents`. Results are bounded excerpts with document, page, and section metadata, never full documents.
 2. Call `fetch` with a returned result's URI for bounded detail on one excerpt, deal, or listing.
 3. Cite the returned document name, page or section, and excerpt for each claim. A similarity rank or a locator alone does not verify a claim.
-4. For a prospecting result, call `prospect_sources_for` with its result ID from `list_prospects` to see the evidence sources behind it.
+4. For a Deal Sourcing result, call `prospect_sources_for` with its result ID from `list_prospects` to see the evidence sources behind it.
 
 ## Notes
 
