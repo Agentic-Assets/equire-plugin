@@ -2,6 +2,14 @@
 
 All notable changes to this plugin are documented here.
 
+## 0.2.9 - 2026-11-01
+
+- Adds Deal Intake access guidance for confirmed deal creation and file attachment, preserving administrator choices and existing grants. Updates client setup and permission-upgrade instructions.
+
+## 0.2.8 - 2026-11-01
+
+- Adds confirmed private upload handoff guidance for sandbox files, with hash verification, short-lived completion tickets, credential handling and truthful host acceptance limits.
+
 ## 0.2.7 - 2026-11-01
 
 - Listing screening: search and listing records now state what a listing's amount is. A loan sale, auction, capital raise or other non-property amount is labeled (Loan Price, Starting Bid, Raise Amount and so on) and never called an asking price, its price per square foot and cap rate stay withheld, and an unassessed listing makes no structure claim. A classification still pending review keeps its label and says so, a failed lookup is reported as unread, and a lease is marked not applicable. Records add an interest kind, price and size basis, structure badges, a classification state and the gates behind each ratio; sale_price_usd keeps its value beside is_property_price.
