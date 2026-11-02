@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "equire",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "Brief deals, triage a portfolio, and test underwriting what-ifs with figures tied to cited sources and release basis. Optional updates need your confirmation, and everything stays within your EQUIRE permissions. Requires an EQUIRE account.",
   "author": {
     "name": "Agentic Assets"
@@ -94,7 +94,7 @@
         "demo_recording_url": "https://drive.google.com/file/d/1_Ac6UsvBH1dveNb4UOVNzDh1IixYebgr/view"
       },
       "publication": {
-        "release_notes": "Version 0.2.9 adds the dedicated Deal Intake access level for confirmed deal creation and document or photo attachment, with explicit consent and preserved existing grants. Setup guidance covers older OAuth registrations, Claude network settings and ChatGPT photo normalization.",
+        "release_notes": "Version 0.2.10 makes listing price and cap rate sorts and price bounds count property prices only: a loan price, starting bid or raise amount is no longer ranked as an asking price or matched by a price range, and search results state how many listings a filter excluded and a sort listed last.",
         "countries": []
       }
     }
