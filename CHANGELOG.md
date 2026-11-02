@@ -2,6 +2,10 @@
 
 All notable changes to this plugin are documented here.
 
+## 0.2.11 - 2026-11-02
+
+- Declares a registered public OAuth client and default Deal Intake permissions for OpenAI. Existing connections and grants stay unchanged; uploading the package alone does not prove the publisher adopted the new registration. Retains the 0.2.10 listing price-basis behavior.
+
 ## 0.2.10 - 2026-11-02
 
 - Listing screening: price and cap rate sorts and the minimum and maximum price now count property prices only. A loan price, starting bid, raise amount or other non-property amount no longer leads a price sort or matches a price range; a sort lists such a listing last and keeps it in the result set, while a price filter excludes it. This holds while classification is on; with it switched off both use the stated amounts. Search results add excluded_by_price_basis, which counts the listings a filter excluded apart from the listings a sort listed last, and records now report listing_contract_version 3. The sale_price_usd value is unchanged.

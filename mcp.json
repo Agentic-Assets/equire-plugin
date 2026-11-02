@@ -1,6 +1,26 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
   "mcpServers": {
-    "equire": { "type": "streamable-http", "url": "https://www.equire.ai/mcp" }
+    "equire": {
+      "type": "streamable-http",
+      "url": "https://www.equire.ai/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "provided",
+              "clientId": "mcp_client_187ef4e1-5749-4647-a1d0-915bda382b24",
+              "tokenEndpointAuthMethod": "none"
+            },
+            "defaultScopes": [
+              "deals:read",
+              "deals:write",
+              "documents:write"
+            ]
+          }
+        }
+      }
+    }
   }
 }
