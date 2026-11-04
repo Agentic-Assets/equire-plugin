@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "equire",
-  "version": "0.2.11",
+  "version": "0.2.12",
   "description": "Brief deals, triage a portfolio, and test underwriting what-ifs with figures tied to cited sources and release basis. Optional updates need your confirmation, and everything stays within your EQUIRE permissions. Requires an EQUIRE account.",
   "author": {
     "name": "Agentic Assets"
@@ -94,7 +94,7 @@
         "demo_recording_url": "https://drive.google.com/file/d/1_Ac6UsvBH1dveNb4UOVNzDh1IixYebgr/view"
       },
       "publication": {
-        "release_notes": "Version 0.2.11 declares a registered public OAuth client and default Deal Intake permissions for OpenAI. Existing grants remain unchanged and publisher adoption requires readback. Retains the 0.2.10 property-price-only listing sorts and bounds, with excluded and listed-last counts.",
+        "release_notes": "Version 0.2.12 adds a brochure state to listing records and describes offering memorandum facts as preliminary, with the date each dated figure is measured at. Search results count only documents worth opening. Listing records report listing contract version 4. Retains the 0.2.11 registered public OAuth client and the 0.2.10 property-price-only listing sorts and bounds.",
         "countries": []
       }
     }
