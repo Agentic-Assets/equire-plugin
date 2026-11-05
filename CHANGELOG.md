@@ -2,6 +2,10 @@
 
 All notable changes to this plugin are documented here.
 
+## 0.2.14 - 2026-11-05
+
+- Updates the OpenAI listing tagline and requests all supported permissions through a new public client registration. Most requested permissions are preselected at consent; Organization Website Knowledge and Search remain opt-in. Existing grants, organization controls and write ceilings are unchanged.
+
 ## 0.2.13 - 2026-11-05
 
 - Explains the optional Organization Website Search permission, encrypted short-lived session access, current-organization scope, and reconnection after expiry. Existing client defaults and grants stay unchanged.
