@@ -2,6 +2,10 @@
 
 All notable changes to this plugin are documented here.
 
+## 0.2.13 - 2026-11-05
+
+- Explains the optional Organization Website Search permission, encrypted short-lived session access, current-organization scope, and reconnection after expiry. Existing client defaults and grants stay unchanged.
+
 ## 0.2.12 - 2026-11-02
 
 - Listing screening: get_listing adds a brochure state (extracted, gated, unavailable, failed, pending, not_selected or withheld) with a plain message, so a brochure behind a broker buyer portal or deal room is reported as one to upload to a deal, not as a missing brochure. Offering memorandum facts are described as preliminary and come from the current extraction only. They now include tenant, building and suite counts, the clear height range, office build-out, parcel numbers, and occupancy and WALT with the date the memorandum states them. In-place rent is not returned. In search results, has_documents counts only documents worth opening and is null when the links could not be read. Search results also add om_withheld, which names a field left empty because its offering memorandum figure came from a document EQUIRE could not match to the listing; get_listing shows that figure with a caveat. Listing records now report listing_contract_version 4.
