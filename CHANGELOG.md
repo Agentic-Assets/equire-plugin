@@ -2,6 +2,23 @@
 
 All notable changes to this plugin are documented here.
 
+## 0.2.18 - 2026-11-18
+
+- Listing screening: search_listings takes a mandate_id from list_mandates. The mandate's states and property type fill the filters you leave out (a place you name replaces its states), derived_filters shows what it set and what you overrode, a mandate whose area is text rather than states says the search ran nationally, and a mandate property type with no matching listing type is left unfiltered and says so. Each row then carries its fit: a score, the scorer's tier and the criteria it met or missed (a null score when nothing could be scored, never zero), a match against the mandate's stated criteria, not a recommendation or an underwriting view. A connection without prospecting read access gets no mandate criteria and no fit, and the response says the mandate was withheld. Another organization's mandate is refused. Where the server supports first_collected_since, every search page also returns as_of, the value to pass on the next check, set an hour before the search so a listing collected while it ran is not skipped; listings first collected in that hour repeat on the next check. New means first collected: a listing that becomes searchable later, such as when a photo is added or its status or type changes, is not reported as new. The skill adds a what is new for a mandate flow, and saving a listing now picks the Investment Mandate from list_mandates by name.
+
+## 0.2.17 - 2026-11-18
+
+- Listing screening: the first page of search_listings now returns a total count of every matching listing and a summary with counts by property type and transaction and sale-side price, price per square foot and cap rate figures, each with its sample size, so a count takes one call. A total that could not be read is reported as unknown, never as zero. Where the server supports it, a sale or lease search also returns listings offered both ways; transaction_match in the response says whether that ran (offered), and the skill searches sale_or_lease separately only when it did not. Where supported, a county search covers every stored spelling of the county; otherwise it uses the most common spelling and says so. property_type takes one of nine listed values, and first_collected_since (a date, or a date-time with a zone) finds listings EQUIRE first collected on or after it, with first_collected_at on each row; where the server cannot apply it, the search returns no rows and says so.
+
+## 0.2.16 - 2026-11-17
+
+- Listing screening: search_listings can search a metro area (by name or CBSA code), a county within one state, a ZIP code, a minimum cap rate, or a box around a point. A metro or county name that matches more than one area returns the candidates to choose from instead of a guess, and a name with no match says so instead of reporting zero listings. These area filters leave out listings with no such location on record, and the response says so. City and property type match the stored value exactly. Results now page with next_cursor until has_more is false, past the old limit of a few listings per source; there is still no total count, so the skill counts by paging and says when a count is a lower bound or when a listing refreshed during paging could be missed. Rows are compact by default (detail full returns the previous row with broker contacts and document flags), and notes appear only when they apply to the search. get_listing can read several listings at once with listing_ids and return only the named sections; photos and page text stay one listing at a time. Price per square foot in get_listing is rounded to cents. Listing records now report listing_contract_version 5.
+
+## 0.2.15 - 2026-11-17
+
+- Updates onboarding and listing guidance: valid requested permissions start selected, including Organization Website Knowledge and Search when both are requested. Omitted or blank permission requests offer all supported permissions within the client registration.
+- Explains Routine Workflow Updates as the consent and missing-policy organization default, subject to saved organization limits. Users review the final grant before authorizing; existing connections keep their current grants.
+
 ## 0.2.14 - 2026-11-05
 
 - Updates the OpenAI listing tagline and requests all supported permissions through a new public client registration. Most requested permissions are preselected at consent; Organization Website Knowledge and Search remain opt-in. Existing grants, organization controls and write ceilings are unchanged.
