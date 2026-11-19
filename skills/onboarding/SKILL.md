@@ -5,7 +5,7 @@ description: Help a user connect the EQUIRE plugin, choose an EQUIRE organizatio
 
 # Start with EQUIRE
 
-Connect EQUIRE, choose the organization to work in, and route the user's first question to the workflow that fits it.
+Connect EQUIRE, choose an organization, and route the user's first question to the right workflow.
 
 ## Ground rules
 
@@ -20,11 +20,11 @@ Connect EQUIRE, choose the organization to work in, and route the user's first q
 
 ## Connect
 
-The EQUIRE server URL is `https://www.equire.ai/mcp`. If EQUIRE is not connected, point the user to the connect steps in this plugin's README: in short, add a connector with that URL in the host's connector or MCP settings, or install the EQUIRE plugin where the host's directory lists it, then sign in with an EQUIRE account (in Claude Code, run `/mcp` to sign in). Never ask for a password, token, or other credential in the conversation.
+The EQUIRE server URL is `https://www.equire.ai/mcp`. If EQUIRE is not connected, use this plugin's README: add that URL in the host's connector or MCP settings, or install EQUIRE where its directory lists it, then sign in with an EQUIRE account (Claude Code: `/mcp`). Never ask for a password, token, or other credential in the conversation.
 
-During sign-in, EQUIRE shows its own consent screen, where the user chooses the organizations to share, the permissions to grant, and a write level. Read Only allows reads. Reads & Staged Changes adds proposals for a person to approve in EQUIRE. Deal Intake adds confirmed deal creation and document/photo attachment. When authorization scopes are omitted, consent requests default to deal reads and intake permissions within the registered ceiling; document search is separate. Existing grants stay unchanged. Routine Workflow Updates, when the consent screen offers it, adds other direct changes such as deal notes and diligence items. The user can review or revoke the connection in EQUIRE Settings. Connect EQUIRE once per host; a second connection to the same server shows every tool twice.
+During sign-in, EQUIRE shows its own consent screen, where the user chooses the organizations to share, the permissions to grant, and a write level. Read Only allows reads. Reads & Staged Changes adds proposals for a person to approve in EQUIRE. Deal Intake adds confirmed deal creation and document/photo attachment. An omitted or blank permission request offers all currently supported permissions within the client registration. Valid requested permissions start selected; the user reviews the final grant before authorizing. Routine Workflow Updates is the consent and missing-policy organization default, lowered by saved organization caps. It adds direct changes such as deal notes and diligence items, each only after the user confirms. Existing connections keep their grants until the user reconnects and authorizes a new one. Review or revoke access in EQUIRE Settings. Connect once per host; duplicate connections show duplicate tools.
 
-If the client requests Organization Website Search, it is a separate, optional consent choice. EQUIRE stores the current session access token encrypted on its server for website search under the member's access; it does not store a refresh token for this search. Search applies to the session's current organization and expires with that access token. If search reports that reconnection is required, tell the user to reconnect, even if the assistant connection remains active. Search and source-detail retrieval require the separate Organization Website Knowledge permission; the member must select both permissions to enable search. A client registration that does not request the search permission cannot grant it.
+Organization Website Search and Organization Website Knowledge start selected when both are requested. The user can uncheck either before authorizing. EQUIRE stores the current session access token encrypted on its server for website search under the member's access; it does not store a refresh token for this search. Search applies to the session's current organization and expires with that access token. If search reports that reconnection is required, tell the user to reconnect, even if the assistant connection remains active. Search requires both Organization Website Search and Organization Website Knowledge; the member must keep both selected to enable search. Source-detail retrieval requires Organization Website Knowledge. A client registration that does not request the search permission cannot grant it.
 
 ## Steps
 
