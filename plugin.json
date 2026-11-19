@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "equire",
-  "version": "0.2.18",
+  "version": "0.2.19",
   "description": "Brief deals, triage a portfolio, and test underwriting what-ifs with figures tied to cited sources and release basis. Optional updates need your confirmation, and everything stays within your EQUIRE permissions. Requires an EQUIRE account.",
   "author": {
     "name": "Agentic Assets"
@@ -94,7 +94,7 @@
         "demo_recording_url": "https://drive.google.com/file/d/1_Ac6UsvBH1dveNb4UOVNzDh1IixYebgr/view"
       },
       "publication": {
-        "release_notes": "Version 0.2.15 updates connection guidance for selected requested permissions and Routine Workflow Updates defaults. Omitted or blank permission requests offer all supported permissions within the client registration. Review the final grant before authorizing; existing grants and saved organization limits remain in force.",
+        "release_notes": "Version 0.2.19 brings the listing and consent updates from 0.2.15 through 0.2.18. Listing search can cover a metro area, county, ZIP code, minimum cap rate or a box around a point, pages through every result, and returns a total count with a summary on its first page. You can search by one of your Investment Mandates to see each listing's fit against the mandate's stated criteria, which is a match and not a recommendation, and check what EQUIRE first collected since your last search. The consent screen starts with requested permissions selected, and a blank request offers every supported permission within the client registration. Existing grants and saved organization limits remain in force.",
         "countries": []
       }
     }
