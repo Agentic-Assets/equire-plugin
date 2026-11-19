@@ -2,6 +2,10 @@
 
 All notable changes to this plugin are documented here.
 
+## 0.2.19 - 2026-11-19
+
+- Updates the OpenAI listing release notes to describe the 0.2.15 through 0.2.18 changes; no skill or tool behavior change.
+
 ## 0.2.18 - 2026-11-18
 
 - Listing screening: search_listings takes a mandate_id from list_mandates. The mandate's states and property type fill the filters you leave out (a place you name replaces its states), derived_filters shows what it set and what you overrode, a mandate whose area is text rather than states says the search ran nationally, and a mandate property type with no matching listing type is left unfiltered and says so. Each row then carries its fit: a score, the scorer's tier and the criteria it met or missed (a null score when nothing could be scored, never zero), a match against the mandate's stated criteria, not a recommendation or an underwriting view. A connection without prospecting read access gets no mandate criteria and no fit, and the response says the mandate was withheld. Another organization's mandate is refused. Where the server supports first_collected_since, every search page also returns as_of, the value to pass on the next check, set an hour before the search so a listing collected while it ran is not skipped; listings first collected in that hour repeat on the next check. New means first collected: a listing that becomes searchable later, such as when a photo is added or its status or type changes, is not reported as new. The skill adds a what is new for a mandate flow, and saving a listing now picks the Investment Mandate from list_mandates by name.
