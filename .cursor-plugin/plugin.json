@@ -1,8 +1,8 @@
 {
   "name": "equire",
   "displayName": "EQUIRE",
-  "version": "0.2.20",
-  "description": "Brief deals, triage a portfolio, and test underwriting what-ifs with figures tied to cited sources and release basis. Optional updates need your confirmation, and everything stays within your EQUIRE permissions. Requires an EQUIRE account.",
+  "version": "0.2.21",
+  "description": "Brief deals, triage a portfolio, and test underwriting what-ifs with figures tied to cited sources and release basis. With your confirmation it can also create deals, attach documents and photos, add notes and diligence items, queue listings, start market research, and stage valuation and review changes for approval, limited to the permissions and write level you grant. Requires an EQUIRE account.",
   "author": {
     "name": "Agentic Assets"
   },

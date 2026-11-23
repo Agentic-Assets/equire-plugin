@@ -1,6 +1,6 @@
 ---
 name: underwriting-what-if
-description: Run read-only underwriting sensitivities through an EQUIRE deal's saved valuation model and, only on request, stage an assumption change for review in EQUIRE. Use when the user asks "what if" about exit cap, market rent, rent growth, occupancy, or other assumptions on an EQUIRE deal, wants to stress-test its IRR, equity multiple, or DCF value, or asks to propose an assumption change. Not for generic DCF math on numbers the user supplies or for working on code.
+description: Run underwriting sensitivities that save nothing through an EQUIRE deal's saved valuation model and, only on request, stage an assumption change for review in EQUIRE. Use when the user asks "what if" about exit cap, market rent, rent growth, occupancy, or other assumptions on an EQUIRE deal, wants to stress-test its IRR, equity multiple, or DCF value, or asks to propose an assumption change. Not for generic DCF math on numbers the user supplies or for working on code.
 ---
 
 # Underwriting what-if
