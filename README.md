@@ -9,7 +9,7 @@ Where the host exposes skill commands, use the names below; elsewhere, ask for t
 - `/equire:onboarding`: connect EQUIRE, choose an organization, and learn what the assistant can and cannot change.
 - `/equire:deal-briefing`: an investment-committee-style briefing on one deal, with cited source excerpts.
 - `/equire:portfolio-triage`: what needs attention across the portfolio, ranked by open risk, with side-by-side deal comparisons.
-- `/equire:underwriting-what-if`: read-only sensitivities through a deal's saved valuation model; nothing is saved unless you ask for a proposal and confirm it.
+- `/equire:underwriting-what-if`: sensitivities through a deal's saved valuation model that save nothing; on request, it stages an assumption change for approval after you confirm.
 - `/equire:listing-screening`: search EQUIRE's market listing index, see what is new for one of your Investment Mandates with each listing's fit, inspect offering memorandum facts with their caveats, and queue a listing for screening after you confirm.
 - `/equire:market-research`: broker reports, supply, comparable sales, and metro trends for a deal, run only from a plan you approve.
 - `/equire:investment-workflow`: document evidence across deals, deal notes, diligence items, review-item proposals, and the interactive EQUIRE workspace.

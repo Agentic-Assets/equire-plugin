@@ -2,10 +2,14 @@
 
 All notable changes to this plugin are documented here.
 
+## 0.2.21 - 2026-11-23
+
+- Listing copy: the descriptions now name what the assistant can change in EQUIRE with your confirmation, instead of calling what-ifs read-only or saying everything stays within your permissions. No skill or tool behavior change.
+
 ## 0.2.20 - 2026-11-19
 
 - Market research: Continue fact review now lives in the Sources sheet of the one-page Market Research report, which replaced its tabs; the skill names it there.
-- Packaging: the plugin repository no longer has a root CLAUDE.md, which plugins never load; its maintainer notes stay in AGENTS.md.
+- Packaging: the plugin repository no longer has a root CLAUDE.md, which plugins never load; its maintainer notes are in AGENTS.md.
 
 ## 0.2.19 - 2026-11-19
 
