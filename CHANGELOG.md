@@ -2,6 +2,11 @@
 
 All notable changes to this plugin are documented here.
 
+## 0.2.20 - 2026-11-19
+
+- Market research: Continue fact review now lives in the Sources sheet of the one-page Market Research report, which replaced its tabs; the skill names it there.
+- Packaging: the plugin repository no longer has a root CLAUDE.md, which plugins never load; its maintainer notes stay in AGENTS.md.
+
 ## 0.2.19 - 2026-11-19
 
 - Updates the OpenAI listing release notes to describe the 0.2.15 through 0.2.18 changes; no skill or tool behavior change.
